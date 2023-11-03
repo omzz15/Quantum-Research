@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import random
 
 weight_function = lambda u, v : random.randint(1,100)
-sides = 5
+sides = 20
 
 G = nx.Graph()
 
@@ -18,7 +18,7 @@ pos=nx.circular_layout(G)
 nx.draw_networkx_nodes(G, pos, node_size=700)
 
 # edges
-nx.draw_networkx_edges(G, pos, width=6)
+nx.draw_networkx_edges(G, pos, width=2)
 
 # node labels
 nx.draw_networkx_labels(G, pos, font_size=20, font_family="sans-serif")
